@@ -27,10 +27,16 @@ export class HomePage {
 		});
 	}
 
+	/**
+	 * Navigate to the home page.
+	 */
 	async goToHomePage() {
 		await this.page.goto(this.url);
 	}
 
+	/**
+	 * Assert that the welcome heading is visible.
+	 */
 	async assertWelcomeHeading() {
 		await expect(this.pageTitleHeader).toBeVisible();
 	}
