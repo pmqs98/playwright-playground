@@ -40,4 +40,32 @@ export class HomePage {
 	async assertWelcomeHeading() {
 		await expect(this.pageTitleHeader).toBeVisible();
 	}
+
+	/**
+	 * Navigate to the Challenging DOM page.
+	 */
+	async goToChallengingDOMPage() {
+		await this.challengingDOMLink.click();
+	}
+
+	/**
+	 * Navigate to the Dropdown page.
+	 */
+	async goToDropdownPage() {
+		await this.dropdownLink.click();
+	}
+
+	/**
+	 * Navigate to the Dynamic Controls page.
+	 */
+	async goToDynamicControlsPage() {
+		await this.dynamicControlsLocator.click();
+	}
+
+	/**
+	 * Navigate to the Login page.
+	 */
+	async goToLoginPage() {
+		await this.loginPageLocator.click();
+	}
 }
